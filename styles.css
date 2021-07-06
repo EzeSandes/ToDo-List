@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;700&display=swap');
+
+
+:root{
+   --main--backg-color: #F08080;
+   --primary-backg-text-color: #F6F4D2;
+   --primary-text-color: #000000;
+   --secundary-text-color: #4A5759;
+   --complete-color: #90BE6D;
+   --delete-color: #F94144;
+   --delete-darker-color: #a82c2e;
+}
+
+*,
+*::after,
+*::before{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body{
+   font-family: 'Rubik', sans-serif;
+   background-color: var(--main--backg-color);
+   color: var(--primary-text-color);
+
+   min-height: 100vh;
+}
+
+form {
+   min-height: 20vh;
+}
+
+header{
+   margin-top: 5rem;
+   min-height: 10vh;
+   font-size: 1.5rem;
+   color: var(--primary-backg-text-color);
+}
+
+header h1{
+   border-bottom: 4px solid var(--delete-color);   
+}
+
+form input, 
+form button,
+.select select{
+   border: none;
+   padding: 0.5rem;
+   border-radius: 6px;
+   background-color: var(--primary-backg-text-color);
+   font-size: 2rem;
+}
+
+form input {
+   border-top-right-radius: 0;
+   border-bottom-right-radius: 0;
+}
+
+form input:focus{
+   outline: none;
+}
+
+form input::-webkit-input-placeholder{
+   color: var(--secundary-text-color);
+   opacity: 0.5;
+   
+   /* Font styles -- placeholder */
+   text-align: center;
+   font-size: 2rem;
+   font-weight: 700;
+   letter-spacing: 4px;
+}
+
+form button{
+   border-top-left-radius: 0;
+   border-bottom-left-radius: 0;
+
+   color: var(--delete-color);
+   cursor: pointer;
+
+   transition: all 0.3s ease;
+}
+
+form button:active{
+   color: var(--delete-darker-color);
+}
+
+select{
+   color: var(--secundary-text-color);
+   font-size: 0.1rem;
+   width: 16rem;
+   cursor: pointer;
+}
+
+.select{
+   font-size: 2rem;
+   margin-left: 10px;
+   position: relative;
+}
+
+/* Black triangle pointing down */
+.select::after{
+   content: "\25BC";
+   
+   color: var(--primary-backg-text-color);
+   background: var(--delete-color);
+   padding: 0.5rem;
+   pointer-events: none;
+   
+   /* Position */
+   position: absolute;
+   top: 0;
+   right: 0;
+
+   /* Border Radius */
+   border-bottom-right-radius: 6px;
+   border-top-right-radius: 6px;
+}
+
+/***************** UTILITIES ********************/
+.flex{
+   display: flex;
+}
+
+.flex--center{
+   justify-content: center;
+   align-items: center;
+}
