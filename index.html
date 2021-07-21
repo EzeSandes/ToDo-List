@@ -1,63 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo List | Eze Sandes</title>
 
-<head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>ToDo List | Eze Sandes</title>
-
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
       integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-      crossorigin="anonymous" referrerpolicy="no-referrer" />
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-   <link rel="stylesheet" href="styles.css">
-</head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-<body>
-   <header class="flex flex--center">
+  <body>
+    <header class="flex flex--center">
       <h1>Eze's Todo List</h1>
-   </header>
+    </header>
 
-   <main>
+    <main>
       <form class="todo__input flex flex--center">
-         <input type="text" class="todo__input--element" placeholder="What's next?">
-         <button type="submit" class="todo__btn">
-            <i class="fas fa-plus-square"></i>
-         </button>
-         <div class="select">
-            <select name="todos" id="filter-todo">
-               <option value="all">All</option>
-               <option value="completed">Completed</option>
-               <option value="Uncompleted">Uncompleted</option>
-            </select>
-         </div>
+        <input
+          type="text"
+          class="todo__input--element"
+          placeholder="What's next?"
+        />
+        <button type="submit" class="todo__btn">
+          <i class="fas fa-plus-square"></i>
+        </button>
+        <div class="select">
+          <select name="todos" id="filter-todo">
+            <option value="all">All</option>
+            <option value="completed">Completed</option>
+            <option value="Uncompleted">Uncompleted</option>
+          </select>
+        </div>
       </form>
 
       <div class="flex flex--center container container-list">
-         <ul class="todo-list">
-            <div class="todo__item">
-               <div class="todo__item--text">
-                  <li class="todo-item--task">Go to school</li>
-                  <span class="list-date">05/07/2021 | 12:00 AM</span>
-               </div>
-               <button class="btn btn--check"><i class="fas fa-check fa-3x "></i></button>
-               <button class="btn btn--trash"><i class="fas fa-trash-alt fa-3x"></i></button>
+        <ul class="todo-list">
+          <div class="todo__item">
+            <div class="todo__item--text">
+              <li class="todo-item--task">Go to school</li>
+              <span class="list-date">05/07/2021 | 12:00 AM</span>
             </div>
-            <div class="todo__item">
-               <div class="todo__item--text">
-                  <li class="todo-item--task">Go to shopping and market aaaaaaaaaaaa
-                  </li>
-                  <span class="list-date">05/07/2021 | 12:00 AM</span>
-               </div>
-               <button class="btn btn--check"><i class="fas fa-check fa-3x "></i></button>
-               <button class="btn btn--trash"><i class="fas fa-trash-alt fa-3x"></i></button>
+            <button class="btn btn--check">
+              <i class="fas fa-check fa-3x"></i>
+            </button>
+            <button class="btn btn--trash">
+              <i class="fas fa-trash-alt fa-3x"></i>
+            </button>
+          </div>
+          <div class="todo__item">
+            <div class="todo__item--text">
+              <li class="todo-item--task">Go to shopping and market</li>
+              <span class="list-date">05/07/2021 | 12:00 AM</span>
             </div>
-         </ul>
-         <button class="btn btn--clear">Clear All</button>
+            <button class="btn btn--check">
+              <i class="fas fa-check fa-3x"></i>
+            </button>
+            <button class="btn btn--trash">
+              <i class="fas fa-trash-alt fa-3x"></i>
+            </button>
+          </div>
+        </ul>
+        <button class="btn btn--clear">Clear All</button>
       </div>
-   </main>
-   <script src="app.js"></script>
-</body>
+    </main>
 
+    <!-- <footer>&copy;Copyrigth 2021 by Ezequiel Sandes</footer> -->
+
+    <script src="app.js"></script>
+  </body>
 </html>
