@@ -2,6 +2,7 @@
 
 :root {
   --main--backg-color: #f08080;
+  --btn-hover-color: #eb9e9e;
   --primary-backg-text-color: #f6f4d2;
   --primary-text-color: #000000;
   --secundary-text-color: #4a5759;
@@ -139,6 +140,18 @@ select {
 
   font-size: 1.5rem;
   background-color: var(--primary-backg-text-color);
+
+  animation: moveToDown 0.5s ease;
+}
+
+@keyframes moveToDown {
+  0% {
+    transform: translateY(-2rem);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }
 
 @media (max-width: 800px) {
@@ -233,6 +246,10 @@ select {
   padding: 0.8rem 1.5rem;
 }
 
+.btn--clear:hover {
+  background-color: var(--btn-hover-color);
+}
+
 @media (max-width: 800px) {
   .btn--clear {
     position: relative;
@@ -263,6 +280,10 @@ select {
   max-width: 800px;
   margin: 0 auto;
   width: 100%;
+}
+
+.hide {
+  display: none;
 }
 
 @media (max-width: 800px) {
