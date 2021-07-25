@@ -286,6 +286,11 @@ select {
   display: none;
 }
 
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
 @media (max-width: 800px) {
   header {
     margin-top: 2rem;
