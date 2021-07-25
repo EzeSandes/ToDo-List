@@ -132,8 +132,10 @@ function getToDo(elem) {
 }
 
 function clearAll() {
-  todoList.innerHTML = "";
-  reset();
+  if (confirm("Are you sure to remove ALL the items?")) {
+    todoList.innerHTML = "";
+    reset();
+  }
 }
 
 function reset() {
