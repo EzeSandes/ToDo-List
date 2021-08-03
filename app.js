@@ -63,7 +63,8 @@ function renderToDo(toDo) {
 function addTodo(event) {
   event.preventDefault();
 
-  if (!todoInput.value) return;
+  //  removes whitespace from both ends of a string
+  if (!todoInput.value.trim()) return;
 
   const date = new Date();
 
